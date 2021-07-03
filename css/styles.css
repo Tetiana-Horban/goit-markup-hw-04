@@ -1,0 +1,364 @@
+:root {
+  --primary-text-color: #757575;
+  --title-color: #212121;
+  --white-color: #ffffff;
+  --accent-color: #2196f3;
+  --accent-background: #2f303a;
+}
+/* Сброс */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+ul,
+ol {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 0px;
+}
+img {
+  display: block;
+}
+.list {
+  list-style-type: none;
+}
+.link {
+  text-decoration: none;
+}
+/* Боди */
+body {
+  color: var(--primary-text-color);
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
+  font-size: 16px;
+}
+/* Контейнер */
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*Шапка*/
+.header {
+  border: 1px solid #ececec;
+}
+.header .container {
+  display: flex;
+  align-items: center;
+}
+/*Логотип*/
+.prelogo {
+  color: var(--accent-color);
+}
+.logo {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+
+  color: #000000;
+  margin-right: 93px;
+}
+/*Навигация*/
+.nav-list {
+  display: flex;
+}
+.nav-list .item + .item {
+  margin-left: 50px;
+}
+.info {
+  display: flex;
+  margin-left: auto;
+}
+.nav {
+  display: flex;
+  align-items: center;
+}
+.info .item + .item {
+  margin-left: 50px;
+}
+.link-nav {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: var(--title-color);
+
+  padding-top: 36px;
+  padding-bottom: 30px;
+}
+.link-info {
+  display: flex;
+  align-items: center;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: var(--primary-text-color);
+}
+/* Icon */
+.info .icon {
+  fill: currentColor;
+  margin-right: 10px;
+}
+/* Hover Focus Current */
+.link-nav.current,
+.link-info:hover,
+.link-nav:hover,
+.address-link:hover,
+.footer-link:hover,
+.link-info:focus,
+.link-nav:focus,
+.address-link:focus,
+.footer-link:focus {
+  color: var(--accent-color);
+}
+
+/*Герой*/
+.hero {
+  text-align: center;
+  align-items: center;
+  max-width: 1600px;
+
+  background-color: var(--accent-background);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/studio/bgimd.jpg);
+  background-size: cover;
+  background-position: center;
+
+  margin: 0 auto;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: var(--white-color);
+
+  margin-bottom: 30px;
+}
+
+/*Кнопка героя*/
+.button-hero {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  height: 50px;
+  min-width: 200px;
+  cursor: pointer;
+
+  background-color: var(--accent-color);
+  color: var(--white-color);
+
+  padding: 10px 32px;
+  border: solid transparent;
+  border-radius: 4px;
+}
+.button-hero:hover {
+  background-color: #188ce8;
+}
+
+/*Секции*/
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section .list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+}
+.section .item {
+  margin-left: 30px;
+  flex-basis: calc((100% - 120px) / 4);
+}
+.heading {
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+
+  color: var(--title-color);
+
+  margin-bottom: 50px;
+}
+
+.section .title {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.18;
+
+  color: var(--title-color);
+
+  margin-bottom: 10px;
+}
+.section .text {
+  font-size: 14px;
+  line-height: 1.7;
+}
+/* Особенности */
+.nopadding {
+  padding-bottom: 0;
+}
+.features .item {
+  width: 270px;
+}
+.features .title {
+  color: var(--title-color);
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+/*Чем мы занимаемся*/
+.works .list {
+  margin-left: -30px;
+}
+.works .item {
+  margin-left: 30px;
+  flex-basis: calc((100% - 90px) / 3);
+}
+
+/* Наша команда */
+.team .item {
+  width: 270px;
+  text-align: center;
+}
+.team .title {
+  font-size: 16px;
+}
+.team .text {
+  font-size: 16px;
+  line-height: 1.18;
+}
+.caption {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.section.team {
+  background-color: #f5f4fa;
+}
+
+/*Футер*/
+.footer {
+  background-color: var(--accent-background);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer-logo {
+  display: inline-block;
+
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+
+  margin-bottom: 20px;
+}
+.address {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+}
+.footer-logo,
+.address-link {
+  color: var(--white-color);
+}
+.footer-link {
+  color: rgba(255, 255, 255, 0.6);
+}
+/* .address .link {
+  display: block;
+} */
+.address .item {
+  margin-bottom: 9px;
+}
+.address .item:last-child {
+  margin-bottom: 0px;
+}
+
+/* Портфолио*/
+/* Кнопки портфолио */
+.list.filter {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.filter .item + .item {
+  margin-left: 8px;
+}
+.button-portfolio {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  cursor: pointer;
+
+  background: #f5f4fa;
+  color: var(--title-color);
+
+  height: 38px;
+  min-width: 73px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 22px;
+  padding-right: 22px;
+
+  border-radius: 4px;
+  border: solid transparent;
+}
+.button-portfolio:hover,
+.button-portfolio:focus {
+  background-color: var(--accent-color);
+  color: var(--white-color);
+}
+
+/* Карточки портфолио */
+.portfolio .list {
+  flex-wrap: wrap;
+
+  margin-top: -30px;
+}
+.portfolio .item {
+  margin-top: 30px;
+  flex-basis: calc((100% - 90px) / 3);
+}
+.portfolio .title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+
+  color: var(--title-color);
+}
+.portfolio .subject {
+  font-size: 16px;
+  line-height: 1.8;
+
+  color: var(--primary-text-color);
+}
+.portfolio .text {
+  width: 370px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+  border: 1px solid #eeeeee;
+  border-top: none;
+}
