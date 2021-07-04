@@ -254,18 +254,21 @@ body {
 
 /* Наша команда */
 .team .list-icon {
-  fill: currentColor;
   text-align: center;
   margin-left: 0;
   margin-top: 16px;
   justify-content: center;
 }
-.team .icon:hover,
-.team .icon:focus {
+.team .icon-link {
+color: var(--primary-text-color);
+}
+.team .icon-link:hover,
+.team .icon-link:focus {
   background-color: var(--accent-color);
   fill: var(--white-color);
 }
-.list-icon .icon {
+.list-icon .icon-link {
+  fill: currentColor;
   display: flex;
   padding: 12px;
   margin-right: 10px;
@@ -304,10 +307,17 @@ body {
   fill: currentColor;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
+
+}
+.clients .icon-link {
+  fill: var(--primary-text-color);
+}
+.clients .icon-link:hover,
+.clients .icon-link:focus {
+  fill: var(--accent-color);
 }
 .clients .icon:hover,
 .clients .icon:focus {
-  fill: var(--accent-color);
   border: 1px solid var(--accent-color);
 }
 
@@ -361,12 +371,12 @@ body {
 
   color: var(--white-color)
 }
-.social-link .icon {
+.social-link .icon-link {
   background-color: rgba(255, 255, 255, 0.1);;
   fill: var(--white-color)
 }
-.social-link .icon:hover,
-.social-link .icon:focus {
+.social-link .icon-link:hover,
+.social-link .icon-link:focus {
   background-color:var(--accent-color);
 }
 
